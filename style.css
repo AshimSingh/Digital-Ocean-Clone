@@ -1,0 +1,143 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(249,250,254);
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    height: 112px;
+    width: 100%;
+    background-color: #FFFF;
+    position: fixed;
+}
+.notification{
+    background-color: #080c2d;
+    font-family: 'WorkSans-Medium','Helvetica','sans-serif';
+    color: #C0C2D3;
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* .message{
+    padding: 0.7% 20% 0% 10%;
+    background-color: transparent;
+    height: max-height;
+    width: auto;
+} */
+.message{
+    padding: 0.8% 0% 0% 7%;
+    font-size: 15px;
+    font-family: WorkSans-Regular,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,"sans-serif";
+    transition: color 0.2s ease;
+}
+.message a:hover{
+    color: white;
+}
+.not-btn-grp ul,a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: #C0C2D3
+}
+.not-btn-grp li{
+     padding: 10px;
+     list-style: none;
+     display: flex;
+     width: 350px;
+     color: #C0C2D3;
+     justify-content: space-between;
+     margin-right: 100px;
+}
+.not-blue-btn a{
+    color: #00C6FF;
+    background-color: #1D274C;
+    width: 90px;
+    border-radius: 5px;
+    justify-content: center;     
+}
+.not-btn-grp :hover{
+    color:white;
+}
+.not-blue-btn :hover{
+    color: #00C6FF;
+}
+
+.nav-button{
+    display: flex;
+}
+.nav-button li{
+    margin-left: 2%;
+    height: 74px;
+    font-size: 16px;
+    width:35%;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 26px;
+    color:rgb(8, 11, 45) !important;
+    font-family: WorkSans-Medium, Helvetica, san-serif;;
+}
+.nav-button a{
+    /* color: pink; */
+    color:rgb(8, 11, 45) !important;
+    font-weight: 500;
+}
+.home-logo{
+    margin-left: 7%;
+    padding-top: 16px;
+}
+.home-logo img{
+    height: 32px;
+    width: 191px;
+}
+.login-buttons{
+    margin: 1%;
+    margin-left: 15%;
+    display: flex;
+}
+.log-buttons, .log-buttons-2{
+    padding:10px 19px 10px 19px;
+    height: 36px;
+    margin: 0 10px 0px 10px;
+    border:1px solid rgb(192, 194, 211);
+    border-radius: 8px;
+    font-size: 16px;
+    color: rgb(8, 11, 45);
+    font-weight: 600;
+}
+.log-buttons-2{
+    color: white;
+    background-color: rgb(0, 105, 255);
+    transition: background 0.2s ease 0s;
+}
+.log-buttons-2:hover{
+    background-color: rgb(3, 72, 175); 
+}
+
+@media (max-width:1260px){
+    .notification{
+        display: none;
+    }
+    .header{
+        height: 72px;
+    }
+    .log-buttons{
+        display: none;
+    }
+    .log-buttons-2{
+        display: none;
+    }
+    .nav-button a:not(.home-logo a){
+        display: none;
+    }
+    .home-logo{
+        margin-left: 10px;
+    }
+    
+}
